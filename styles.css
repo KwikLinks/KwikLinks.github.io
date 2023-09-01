@@ -1,6 +1,6 @@
-/* Set the background color to electric green */
+/* Set the background color to RGB: 87, 250, 177 */
 body {
-    background-color: #00FF00; /* Electric Green */
+    background-color: rgb(87, 250, 177); /* Electric Green */
 }
 
 /* Your existing styles for buttons */
