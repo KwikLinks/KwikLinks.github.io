@@ -35,7 +35,7 @@
 </head>
 <body>
     <div class="url-input">
-        <input type="text" id="urlInput" value="Disguise Page">
+        <input type="text" id="urlInput" value="Disguise Page" onfocus="if(this.value=='Disguise Page') this.value='';" onblur="if(this.value=='') this.value='Disguise Page';">
         <button onclick="updateFaviconAndTitle()">Update</button>
     </div>
     <div class="button-container">
@@ -46,3 +46,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
