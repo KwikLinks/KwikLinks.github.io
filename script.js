@@ -1,25 +1,14 @@
-function updateFaviconAndTitle() {
-    const urlInput = document.getElementById("urlInput").value;
-    
-    if (urlInput) {
-        fetch(urlInput)
-            .then(response => response.text())
-            .then(data => {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(data, "text/html");
-                const title = doc.querySelector("title");
-                const favicon = doc.querySelector("link[rel*='icon']") || doc.querySelector("link[rel='shortcut icon']");
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleSwitch = document.getElementById("toggleSwitch");
+    const iframe = document.getElementById("external-frame");
 
-                if (title) {
-                    document.title = title.textContent;
-                }
-                if (favicon) {
-                    const faviconHref = favicon.getAttribute("href");
-                    document.querySelector("link[rel='icon']").setAttribute("href", faviconHref);
-                }
-            })
-            .catch(error => {
-                console.error("Error fetching and updating favicon and title:", error);
-            });
-    }
-}
+    toggleSwitch.addEventListener("change", function() {
+        if (toggleSwitch.checked) {
+            // Toggle is on, set the iframe source to "https://kwiklinks.github.io/"
+            iframe.src = "https://kwiklinks.github.io/";
+        } else {
+            // Toggle is off, set the iframe source to "about:blank"
+            iframe.src = "about:blank";
+        }
+    });
+});
