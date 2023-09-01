@@ -1,5 +1,6 @@
 function updateFaviconAndTitle() {
     const urlInput = document.getElementById("urlInput").value;
+    
     if (urlInput) {
         fetch(urlInput)
             .then(response => response.text())
