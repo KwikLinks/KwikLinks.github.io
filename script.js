@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
     const aboutBlankSwitch = document.getElementById("aboutBlankSwitch");
+    const aboutBlankFrame = document.getElementById("aboutBlankFrame");
 
     aboutBlankSwitch.addEventListener("change", function() {
         if (aboutBlankSwitch.checked) {
-            // Toggle is on, open a new tab with the specified URL
-            window.open("https://kwiklinks.github.io/", "_blank");
+            // Toggle is on, change the URL to "about:blank"
+            window.history.replaceState({}, document.title, "about:blank");
         } else {
-            // Toggle is off, do nothing (stay on the current page)
+            // Toggle is off, load "https://kwiklinks.github.io/"
+            aboutBlankFrame.src = "https://kwiklinks.github.io/";
         }
     });
 });
