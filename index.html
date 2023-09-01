@@ -7,70 +7,11 @@
     <title>Student Access Gradebook</title>
     <link rel="icon" href="https://sis.cgresd.net/favicon.ico" type="image/x-icon">
     <style>
-        /* Your existing styles for buttons */
+        /* Your existing styles for buttons and switch */
         /* ... */
-        
-        /* Style for the switch container */
-        .switch-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .switch-label {
-            margin-right: 10px;
-        }
-
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-        }
-
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            background-color: #75329E; /* Purple color */
-            border-radius: 34px;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            transition: 0.4s;
-        }
-
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            border-radius: 50%;
-            transition: 0.4s;
-        }
-
-        input:checked + .slider {
-            background-color: #2196F3; /* Blue color when toggled on */
-        }
-
-        input:checked + .slider:before {
-            transform: translateX(26px);
-        }
-
-        .toggle-input {
-            display: none;
-        }
     </style>
 </head>
 <body>
-    <div class="button-container">
-        <a href="https://www.gamenora.com" class="button" id="gamenora" target="_blank">Gamenora</a>
-        <a href="https://www.miniplay.com" class="button" id="miniplay" target="_blank">MiniPlay</a>
-        <a href="https://www.coolmathgames.com" class="button" id="coolmath" target="_blank">Cool Math Games</a>
-    </div>
-
     <!-- About:Blank Preference Switch -->
     <div class="switch-container">
         <label class="switch-label">About:Blank Preference:</label>
@@ -79,7 +20,17 @@
             <span class="slider"></span>
         </label>
     </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <a href="https://www.gamenora.com" class="button" id="gamenora" target="_blank">Gamenora</a>
+        <a href="https://www.miniplay.com" class="button" id="miniplay" target="_blank">MiniPlay</a>
+        <a href="https://www.coolmathgames.com" class="button" id="coolmath" target="_blank">Cool Math Games</a>
+    </div>
     
+    <!-- iframe for about:blank -->
+    <iframe name="aboutBlankFrame" id="aboutBlankFrame" frameborder="0" allowfullscreen></iframe>
+
     <script src="script.js"></script>
 </body>
 </html>
