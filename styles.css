@@ -3,7 +3,20 @@ body {
     background-color: rgb(87, 250, 177); /* Electric Green */
 }
 
-/* Your existing styles for buttons */
+/* Style for the website title and all text on the page */
+body, .kwiklinks-title, .button {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+/* Style for the website title */
+.kwiklinks-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Style for the single button */
 .button-container {
     text-align: center;
     margin-top: 20px;
