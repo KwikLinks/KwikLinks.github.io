@@ -1,34 +1,21 @@
-/* Reset some default styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Style for the button container */
+/* Your styles for buttons (you can customize this further if needed) */
 .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Style for the buttons */
 .button {
     display: inline-block;
     padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
     text-decoration: none;
-    color: black; /* Default color */
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 5px;
+    font-size: 16px;
     margin: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
 }
 
-/* Hover effect - change color to white on hover */
 .button:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #007BFF;
 }
