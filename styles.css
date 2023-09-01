@@ -1,4 +1,9 @@
-/* Your styles for buttons (you can customize this further if needed) */
+/* Set the background color to electric green */
+body {
+    background-color: #00FF00; /* Electric Green */
+}
+
+/* Your existing styles for buttons */
 .button-container {
     text-align: center;
     margin-top: 20px;
