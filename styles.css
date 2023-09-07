@@ -36,10 +36,11 @@ body, .kwiklinks-title, .button {
 .button:hover {
     background-color: white;
     color: #007BFF;
-} 
+}
 
+/* Style for the footer */
 .footer-container {
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
