@@ -1,84 +1,92 @@
-/* Set the background color to RGB: 87, 250, 177 */
-body {
-    background-color: rgb(87, 250, 177); /* Electric Green */
-}
+        body {
+            font-family: 'Rubik Mono One', sans-serif;
+            background-color: rgb(87, 250, 177);
+            text-align: center;
+        }
 
-/* Style for the website title and all text on the page */
-body, .kwiklinks-title, .button, .navbar, .navbar-link {
-    font-family: 'Rubik Mono One', sans-serif;
-}
+        .kwiklinks-title {
+            font-size: 48px;
+            font-weight: bold;
+        }
 
-/* Style for the website title */
-.kwiklinks-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 20px;
-}
+         .search-container {
+            margin: 20px auto;
+        }
 
-/* Style for the single button */
-.button-container {
-    text-align: center;
-    margin-top: 20px;
-}
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: blue; /* Set the background color to green */
+            border: none;
+            color: blue;
+            border-radius: 10px; /* Add rounded corners */
+            font-weight: bold; /* Add bold font-weight */
+        }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 10px;
-    border-radius: 5px;
-}
+        .button-container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-.button:hover {
-    background-color: white;
-    color: #007BFF;
-}
+        .button {
+            padding: 15px 20px;
+            background-color: blue; /* Change to blue */
+            color: white; /* Set text color to white */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Rubik Mono One', sans-serif; /* Add font-family */
+             width: 16%;
+            margin: 1%; /* Increase margin for spacing */
+            display: inline-block;
+            font-size: 18px; /* Increase font size */
+        }
 
-/* Style for the footer */
-.footer-container {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #f0f0f0; /* Optional: Add a background color for the footer */
-    padding: 10px; /* Optional: Add padding to the footer */
-}
+        .button:hover {
+            background-color: black;
+        }
 
-footer {
-    display: inline-block;
-}
+        .no-result-message {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+     
+      .section-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
 
-/* Style for the navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #007BFF; /* Blue background color for the navbar */
-    padding: 20px;
-}
+        /* Style for the navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #007BFF; /* Blue background color for the navbar */
+            padding: 20px;
+        }
 
-.navbar-left {
-    text-align: left;
-    margin-left: 20px;
-}
+        .navbar-left {
+            text-align: left;
+            margin-left: 20px;
+        }
 
-.navbar-right {
-    text-align: right;
-    margin-right: 20px;
-}
+        .navbar-right {
+            text-align: right;
+            margin-right: 20px;
+        }
 
-.navbar-link {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
+        .navbar-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
 
-.navbar-link:hover {
-    background-color: white;
-    color: blue;
-}
+        .navbar-link:hover {
+            background-color: white;
+            color: blue;
+        }
