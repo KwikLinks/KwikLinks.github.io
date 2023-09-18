@@ -1,0 +1,136 @@
+            body {
+        font-family: 'Press Start 2P', sans-serif;
+        text-align: center;
+        margin: 0; /* Remove default margin */
+        overflow-x: hidden; /* Prevent horizontal scrollbar */
+                 
+        background: linear-gradient(180deg, purple, magenta); /* Purple to magenta gradient background */
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background: none; /* Remove background */
+    }
+
+    .container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the container */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; /* Place the image behind other content */
+    }
+
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 1; /* Place the text above the image */
+    }
+.version {
+    position: absolute;
+    top: calc(50% + 30px); /* Adjust the distance from the overlay as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white;
+    z-index: 1; /* Place the text above the image */
+}
+
+        .unblockmania-title {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+         .search-container {
+            margin: 20px auto;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: purple; /* Set the background color to green */
+            border: none;
+            color: blue;
+            border-radius: 10px; /* Add rounded corners */
+            font-weight: bold; /* Add bold font-weight */
+        }
+
+        .button-container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .button {
+            padding: 15px 20px;
+            background-color: purple; /* Change to blue */
+            color: white; /* Set text color to white */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Press Start 2P', sans-serif; /* Add font-family */
+             width: 16%;
+            margin: 1%; /* Increase margin for spacing */
+            display: inline-block;
+            font-size: 18px; /* Increase font size */
+        }
+
+        .button:hover {
+            background-color: black;
+        }
+
+        .no-result-message {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+     
+      .section-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Style for the navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #8504b8; /* Blue background color for the navbar */
+            padding: 20px;
+        }
+
+        .navbar-left {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .navbar-right {
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .navbar-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        p { color: black; 
+              background-color: white;
+            }
+        .navbar-link:hover {
+            background-color: white;
+            color: blue;
+        }
