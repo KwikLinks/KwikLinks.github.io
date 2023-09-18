@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Student Access Gradebook</title>
+    <link rel="icon" href="https://sis.cgresd.net/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="unblockmania-title">UnblockMania</div>
+        </div>
+        <div class="navbar-right">
+            <a href="https://unblockmania.github.io" class="navbar-link">Home</a>
+            <a href="https://unblockmania.github.io/games" class="navbar-link">Games</a>
+            <a href="https://unblockmania.github.io/apps" class="navbar-link">Apps</a>
+            <a href="https://unblockmania.github.io/proxies" class="navbar-link">Proxies</a>
+            <a href="https://unblockmania.github.io/issue-report" class="navbar-link">Issue Report</a>
+            <a href="https://unblockmania.github.io/chatroom" class="navbar-link">Chatroom</a>
+            <a href="https://unblockmania.github.io/changelog" class="navbar-link">Changelog</a> 
+        </div>
+      </nav>
+      <div class="container">
+        <img src="https://i.ibb.co/wLWpNsn/D4-RNYJ223-WQBX1r0j-BYIAWn2l-Pk-Ea9pn2w-GM8y-Wwu3en5wdq-My-YRy-Zmm-Bi-THRq-Gbw3-Gj-Dms9-J560k-MWFj-A.gif" alt="For some reason this image is blocked!">
+        <div class="overlay">Games</div>
+        <div class="version">If it says "blocked by chrome" fill out a report.</div>
+      </div>
+     <div class="search-container">
+       <div style="text-align: center;">
+        <input type="text" id="searchInput" placeholder="Search For A Game 🔎" oninput="search()">
+        <p class="no-result-message" id="noResultMessage">That game isn't here quite yet, but you can <a href="https://forms.gle/6aCmZrDfrvrvxJcZ7">make a suggestion!</a></p>
+    </div>
+    <div class="button-container" id="buttonContainer">
+        <!-- Create a grid of buttons -->
+        <div class="button-row">
+            <button class="button" onclick="openLink('https://hole-io.com/')">Hole.IO</button>
+            <button class="button" onclick="openLink('https://snowball-io.io/')">Snowball.IO</button>
+            <button class="button" onclick="openLink('https://lordz.io')">Lordz.IO</button>
+            <button class="button" onclick="openLink('https://brutal.io')">Brutal.IO</button>
+            <button class="button" onclick="openLink('https://shapez.io')">Shapez.IO</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://powerline.io')">Powerline.IO</button>
+            <button class="button" onclick="openLink('https://krew.io')">Krew.IO</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbyg1O6PHFEBnBZQ3U5qZp2rFSdcGD4W3y-rxy2mBlVFauGDSB-vpJv1VCIGHLCnbJG_/exec')">Archery.IO</button>
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/basketball_io.html')">Basketball.IO</button>
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/biters-io.html')">Biters.IO</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://frivez.com/games/bouncy-dudes-io/index.html')">Bouncydudes.IO</button>
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/139948058740159493/files/index.html')">BrawlGuys.IO</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@8429f0f2c23981425b469c544e552367f9916d2b/kd84js6f/cleanupio.xml')">CleanUp.IO</button>
+            <button class="button" onclick="openLink('https://crowdcity.io/')">Crowdcity.IO</button>
+            <button class="button" onclick="openLink('https://frivez.com/games/doomz-io/index.html')">Doomz.IO</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/fruit-ninja-classic/')">Fruit Ninja</button>
+            <button class="button" onclick="openLink('https://stickmanhook.github.io/')">Stickman Hook</button>
+            <button class="button" onclick="openLink('https://games.cdn.famobi.com/html5games/n/neon-tower/61fb0e74/?fg_domain=play.famobi.com&fg_aid=A1000-100&fg_uid=6da53b97-1283-4d85-89e1-8a6d8eb0e811&fg_pid=5a106c0b-28b5-48e2-ab01-ce747dda340f&fg_beat=074&original_ref=https%3A%2F%2Fgames.cdn.famobi.com%2F')">Neon Tower</button>
+            <button class="button" onclick="openLink('https://kdata1.com/2019/10/91620/?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=228850&mp_game_uid=bottle-flip-3d&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fbottle-flip-3d&mp_int=1&mp_locale=en_US&mp_player_type=IFRAME&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=Europe%2FMadrid&mp_view_type=')">Bottle Flip 3D</button>
+            <button class="button" onclick="openLink('https://ubg100.github.io//games/eaglercraft/index.html')">Minecraft</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://littlealchemy2.com/')">Little Alchemy 2</button>
+            <button class="button" onclick="openLink('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if7dv@360f6cbd41dfbe45f3e19f9d35cf619274d529d6/xv78kr4/geometry-dash-classic.xml')">Geometry Dash Classic</button>
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/backflip_maniac.html')">Backflip Maniac</button>
+            <button class="button" onclick="openLink('https://html5-games.io/game/happy-glass')">Happy Glass</button>
+            <button class="button" onclick="openLink('https://freeonlinegames.github.io/cat-trap.html')">Cat trap</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://play2048.co/')">2048</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/where-is-the-water/')">Where Is The Water</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if1dv@6cf9112f6ecb33d74d6a200af3d02c773e757429/hy4er63/bb.xml')">Ball Blast</button>
+            <button class="button" onclick="openLink('https://www.mathplayground.com/mobile_block_the_pig/')">Block The Pig</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbz7vI7BYbTPI0TZkKlqZzBEeoaEwkRjGng4N0qZDKK5Rf013zLbW5Gap-dqXBTKjcLd/exec')">Block Hexa Puzzle</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/jw94n91eolubb44a0a9v1mrfc9b05y1o/')">Bricks Breaker</button>
+            <button class="button" onclick="openLink('https://cdn.bubbleshooter.net/games/bubble-shooter/')">Bubble Shooter Classic</button>
+            <button class="button" onclick="openLink('https://elite-bubble-minotaurasaurus.glitch.me/')">Bubble Trouble</button>
+            <button class="button" onclick="openLink('https://q10games.com/Candy_Crush/candy-crush/index.html')">Candy Crush</button>
+            <button class="button" onclick="openLink('https://html5-games.io/game/brawl-stars')">Brawl Royale</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://justfall.lol/')">JustFall LOL</button>
+            <button class="button" onclick="openLink('https://lastmagestanding.com/')">Last Mage Standing</button>
+            <button class="button" onclick="openLink('https://betterbull.com/uploads/5/5/6/7/5567194/custom_themes/320690105873469650/files/index.html')">Bacon May Die</button>
+            <button class="button" onclick="openLink('https://margaretlovelace.com/uploads/9/9/0/8/139890129/custom_themes/336266318825092636/files/bic1.html')">Bad Ice Creme</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://920471537-629174630016495823.preview.editmysite.com/uploads/b/139890129-403936298467797284/files/bic2.xml')">Bad Ice Creme 2</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if1dv@381e97dbad93c3d6358d325dd9d128be9cca7f87/ds6uj4gf/bts.xml')">Bad Time Simulator</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if3dv@757b6370ec2725881c3897614e7654f49c42ed65/kf64fgh7/bspl.xml')">Brawl Stars Project Laser</button>
+            <button class="button" onclick="openLink('https://b.gamesdizi.com/an/build-and-crush/')">Build And Crush</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/upload/games/html5/adcapitalist/')">AdCap</button>
+            <button class="button" onclick="openLink('https://freeonlinegames.github.io/cookie-clicker/')">Cookie Clicker</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://dogeminer2.com/')">Dodge Miner 2</button>
+            <button class="button" onclick="openLink('https://cityidle.com/?lvl=1&page=factory')">City Idle</button>
+            <button class="button" onclick="openLink('https://crazycaves.h5games.usercontent.goog/v/24bc2c61-c599-4c5a-9fde-fd3a14fd28a6/?gameCenterId=gamesnacks&origin=https://gamesnacks.com')">Crazy Caves</button>
+            <button class="button" onclick="openLink('https://tan-bread.glitch.me/')">CSGO Clicker</button>
+            <button class="button" onclick="openLink('https://games.cdn.famobi.com/html5games/h/high-hills/v130/?fg_domain=play.famobi.com&fg_aid=A1000-100&fg_uid=2a35d037-696c-4351-9e34-7260392f9404&fg_pid=5a106c0b-28b5-48e2-ab01-ce747dda340f&fg_beat=584&original_ref=https%3A%2F%2Fgames.cdn.famobi.com%2F')">High Hills</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://games.cdn.famobi.com/html5games/m/moto-x3m-pool-party/v080/?fg_domain=play.famobi.com&fg_aid=A1000-100&fg_uid=b2102250-eb51-4704-9cab-ff296491cc68&fg_pid=5a106c0b-28b5-48e2-ab01-ce747dda340f&fg_beat=585&original_ref=https%3A%2F%2Fgames.cdn.famobi.com%2F')">Moto X3M Pool Party</button>
+            <button class="button" onclick="openLink('https://games.cdn.famobi.com/html5games/d/drift-dudes/v180/?fg_domain=play.famobi.com&fg_aid=A1000-100&fg_uid=4379d17e-2ec5-45ff-a76b-74e4c7634ed0&fg_pid=5a106c0b-28b5-48e2-ab01-ce747dda340f&fg_beat=585&original_ref=https%3A%2F%2Fgames.cdn.famobi.com%2F')">Drift Dudes</button>
+            <button class="button" onclick="openLink('https://games.cdn.famobi.com/html5games/d/dont-crash/v030/?fg_domain=play.famobi.com&fg_aid=A1000-100&fg_uid=9320bd31-c1fa-4dda-9a89-6e3946399a84&fg_pid=5a106c0b-28b5-48e2-ab01-ce747dda340f&fg_beat=586&original_ref=https%3A%2F%2Fgames.cdn.famobi.com%2F')">Don't Crash</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if10dv@dba2a0f398d2a9041879128b70566dcaee47b8d0/f12ds3/moto-x3m.xml')">Moto X3M</button>
+            <button class="button" onclick="openLink('https://www.madalingames.com/madalingames/wp-content/uploads/games/webgl/M/MSC2-files/015/MSC2-WEBGL/index.html')">Madalin Stunt Cars 2</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbxVL31uiSnwukjx25tPFw7nJVDPCQLkVnlCpjWrs4l5BSYNHKm2cmu5qzhslvR2ELUc/exec')">Arcade Drift</button>
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/qxvackg7euarmwjp4lg5j8n7s7kg25yt/')">Blocky Highway</button>
+            <button class="button" onclick="openLink('https://gg.unblockedzugames.com/beach-buggy-racing/')">Beach Buggy Racing</button>
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/car_evil.html')">Car Eats Car: Evil Cars</button>
+            <button class="button" onclick="openLink('https://confusion-sugared-booklet.glitch.me/')">Car Racing Winter</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://www.stat2games.sites.grinnell.edu/games/racekart.html')">Race Kart</button>
+            <button class="button" onclick="openLink('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://130691753-248601183720683749.preview.editmysite.com/uploads/b/146211889-219095196624349428/files/cvm.xml')">Car VS Missle</button>
+            <button class="button" onclick="openLink('https://quiver-bloom-venus.glitch.me/')">Crazy Racing</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbzHNUCYXqSBZqPF9e64-crKnjbh1fASMC1c9rnx2-KAn26h6fBepT4bXY9KP7GZXdPi/exec')">Demolition Derby</button>
+            <button class="button" onclick="openLink('https://cdn.ludigames.com/h5/dragRacingClubFree/')">Drag Racing Club</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://befitting-slash-acrylic.glitch.me/')">Drag Racing Rivals</button>
+            <button class="button" onclick="openLink('https://www.mathplayground.com/drift-boss-v3/index.html')">Drift Boss</button>
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/ggoyxiy0q9oharfdfu4ksax58wpzqba3/')">Drift Challenge</button>
+            <button class="button" onclick="openLink('https://merciful-sprinkle-friend.glitch.me/')">Drift Car Simulator</button>
+            <button class="button" onclick="openLink('http://ams.cdn.arkadiumhosted.com/assets/global/game/atari-asteroids/fdcade53-2c7b-42d3-933c-bd5b89f5bf0f/?events=game_start,game_end,test_ready,event_change')">Asteroids</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://sandboxels.r74n.com/')">Sandboxels</button>
+            <button class="button" onclick="openLink('https://playcanv.as/index/DLgXf1zr')">Flappy Bird</button>
+            <button class="button" onclick="openLink('https://www.google.com/logos/2010/pacman10-i.html')">Pacman</button>
+            <button class="button" onclick="openLink('https://www.miniplay.com/helpers/game/sandbox.php?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=1889&mp_game_uid=ultimate-flash-sonic&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fultimate-flash-sonic&mp_int=1&mp_locale=en_US&mp_player_type=FLASH&mp_player_url=aHR0cHM6Ly93d3cubWluaWp1ZWdvc2dyYXRpcy5jb20vZmxhc2gxMjM0L25vX2hvdGxpbmsvc29uaWM0LnN3Zg%3D%3D&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=')">Sonic Flash</button>
+            <button class="button" onclick="openLink('https://funhtml5games.com/donkeykong/index.html')">Donkey Kong</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://funhtml5games.com/mariokart/')">MarioCart</button>
+            <button class="button" onclick="openLink('https://funhtml5games.com/pacmanfps/index.html')">Pacman FPS</button>
+            <button class="button" onclick="openLink('https://jcw87.github.io/c2-smb1/')">Mario</button>
+            <button class="button" onclick="openLink('https://tetris.merkoba.com/')">Tetris</button>
+            <button class="button" onclick="openLink('https://celesteclassic.github.io/')">Celeste Classic</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://play.isleward.com/')">Isleward</button>
+            <button class="button" onclick="openLink('https://funhtml5games.com/frogger/index.html')">Frogger Original</button>
+            <button class="button" onclick="openLink('https://funhtml5games.com/spaceinvaders/index.html')">Space Invaders</button>
+            <button class="button" onclick="openLink('https://games.cdn.famobi.com/html5games/0/8-ball-billiards-classic/f6589445/?fg_domain=play.famobi.com&fg_aid=A1000-1&fg_uid=82038e98-d4e1-46dd-8de9-1460d1395eab&fg_pid=4638e320-4444-4514-81c4-d80a8c662371&fg_beat=604&original_ref=https%3A%2F%2Fgames.cdn.famobi.com%2F')">8 Ball: Billards</button>
+            <button class="button" onclick="openLink('https://i.gamesgo.net/uploads/game/html5/4072/')">Crossy Road</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://offline-dino-game.firebaseapp.com/')">Dino Game</button>
+            <button class="button" onclick="openLink('https://funhtml5games.com/doodlejump/index.html')">Doodle Jump</button>
+            <button class="button" onclick="openLink('https://www.google.com/fbx?fbx=snake_arcade')">Google Snake</button>
+            <button class="button" onclick="openLink('https://panoramic-traveling-sedum.glitch.me/')">9 Ball Pro</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fakoopasrevenge2.xml')">A Koopa's Revenge</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fatari-breakout.xml')">Atari Breakout</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://372518406-153950463925106749.preview.editmysite.com/uploads/b/139890129-156013607588663671/files/bca.xml')">Baby Chicco Adventures</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=bullet-bill-3')">Bullet Bill 3</button>
+            <button class="button" onclick="openLink('https://mystifying-goodall-147690.netlify.app/')">Choppy Orc</button>
+            <button class="button" onclick="openLink('https://games.cdn.famobi.com/html5games/c/curve-ball-3d/v010/?fg_domain=play.famobi.com&fg_aid=A-FAK0S&fg_uid=f3319962-5fb5-441f-811a-4baf8aeb58e7&fg_pid=21580307-9bb3-4130-84d6-32b3ec1c9c97&fg_beat=610&original_ref=https%3A%2F%2Fgames.cdn.famobi.com%2F')">CurveBall 3D</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://www.google.com/logos/2020/kitsune/rc6/kitsune20.html')">Champion Island</button>
+            <button class="button" onclick="openLink('https://www.google.com/logos/2019/july4th19/r6/july4th19.html?amp;sdoodles=1&hl=en')">Google Baseball</button>
+            <button class="button" onclick="openLink('https://jakwhegf.github.io/iuertjklngkkdd/')">Retro Bowl</button>
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/p4pa453tundv6gm5t1af3633vq0nay9r/')">Boxing Random</button>
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/u7kh677sengcitk8eaib93z7gsiub9f6/')">Drunken Boxing</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://penaltykickonline.com/penalty-kick-online.embed')">Penalty Kick Online</button>
+            <button class="button" onclick="openLink('https://kdata1.com/2021/02/Volley_random/')">Volley Random</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://64345986-62434566.preview.editmysite.com/uploads/9/9/0/8/139890129/custom_themes/104868751615748392/files/basran.xml')">Basket Random</button>
+            <button class="button" onclick="openLink('https://kdata1.com/2020/02/Soccer_Random/')">Soccer Random</button>
+            <button class="button" onclick="openLink('https://basketbros.io/')">Basket Bros</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://v6p9d9t4.ssl.hwcdn.net/html/1643267/index.html?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=229898&mp_game_uid=a-small-world-cup&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fa-small-world-cup&mp_int=1&mp_locale=en_US&mp_player_type=IFRAME&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=')">A Small World Cup</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbyH6DuqF97jjA40971zy3TBLaN-uf5dh4S85UvGy91-OP7DUpaEz7eZ04nE_vqtfv2I/exec')">Air Hockey</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if1dv@cc17334589e4fb70d755b99e8b2a527679f22ec1/39fks64h/d8g3s.xml')">Apple Shooter</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbxiSuuhCGLNGhwZZH5GmutC-qNS8-q2rAzTc6HgleWpqTIq4nGTZnsTl5PEcDI8yXmgKg/exec')">Athletic Games</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/awesome-run.xml')">Awesome Run</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/awesome-run-2.xml')">Awesome Run 2</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/backyard-baseball.xml')">Backyard Baseball</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbyy_YiCLXGb1zzgutZg8y99uc___3YS7dYFh2sT4Cq9L9eDXhwwLY70FavbQ9w8EYZ5xg/exec')">Badminton League</button>
+            <button class="button" onclick="openLink('https://basket-and-ball.glitch.me/')">Basket and Ball</button>
+            <button class="button" onclick="openLink('https://bittersweet-gaudy-penalty.glitch.me/')">Basket Slam Dunk 2</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if3dv@b60a8d7ea307865b358c0f3ba78ade795aef026f/jd70s3/bl2020.xml')">Basketball Stars 2</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if2dv@b7038a2edc641ddaca86aa17e6e73af32844e29e/ckd47g2k/bf.xml')">Basketball Physics</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if3dv@3bccd83a549fdad027e239b2ce20e31f0c66c1d8/sd7jk3g/d8g3s.xml')">Basketball shooter</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if3dv@6a3aa6b5b121c4c1f7da6cc5bfd9e71b40f1262b/zm48hw/bs.xml')">Basketball Stars</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbxr-ZfplvFAJj4L8c7rzKWVTCqT4Qn1mSPTuVVrqJMbClhUrBXJtZ-iyxiiFq298z3Vgg/exec')">Battle Soccer Arena</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://285001835-183755392105928452.preview.editmysite.com/uploads/b/139890129-828743568385243875/files/bsb.xml')">Big Shot Boxing</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://836410537-274630694719463720.preview.editmysite.com/uploads/b/139890129-416556163995164111/files/bs.xml')">Biker Street</button>
+            <button class="button" onclick="openLink('https://five-light-approach.glitch.me/')">Blocky Kick</button>
+            <button class="button" onclick="openLink('https://games.cdn.famobi.com/html5games/0/3d-bowling/v070/?fg_domain=play.famobi.com&fg_aid=A-ZD6AK&fg_uid=63ed6e3a-cf0c-42de-81ed-917cccb8e412&fg_pid=9b708797-1e48-46cf-8483-be5915f06fa7&fg_beat=629&original_ref=https%3A%2F%2Fwww.google.com%2F')">3D Bowling</button>
+            <button class="button" onclick="openLink('https://w8.snokido.com/games/html5/cannon-basketball-2/index.html')">Cannon Basketball 2</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fcrunchball-3000.xml')">Crunchball 3000</button>
+            <button class="button" onclick="openLink('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://429501738-163829673055841933.preview.editmysite.com/uploads/b/139890129-903035575386050284/files/cad.xml')">Cut and Dunk</button>
+            <button class="button" onclick="openLink('https://www.ilibrarian.net/games/four-colors/index.html')">4 Colors</button>
+            <button class="button" onclick="openLink('https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/18PSYoE8/index.html')">Monopoly</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://815037491-38406926138503627.preview.editmysite.com/uploads/b/139890129-626568869364226036/files/fbawg1.xml')">Fireboy & Watergirl</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/230429375634592699/files/index.html')">Among Us SP</button>
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/8gjq1sqm2wc60qfls74zoqy7ab5264xe/')">Drunken Duel</button>
+            <button class="button" onclick="openLink('https://unblockedgamesboo.com/webgl/blood-tournament/index.html')">Blood Tournament</button>
+            <button class="button" onclick="openLink('https://foamy-forested-organ.glitch.me/')">Bomb It 2</button>
+            <button class="button" onclick="openLink('https://woolly-internal-flare.glitch.me/')">Bomb It 3</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://pear-orange-icecream.glitch.me/')">Bomb It 4</button>
+            <button class="button" onclick="openLink('https://wooded-ballistic-sundae.glitch.me/')">Bomb It 5</button>
+            <button class="button" onclick="openLink('https://quirky-noisy-curler.glitch.me/')">Bomb It 6</button>
+            <button class="button" onclick="openLink('https://dazzling-caramel-quokka.glitch.me/')">Bomb It 7</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/boxhead-more-rooms.xml')">Boxhead: More Rooms</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/five-nights-at-freddy-s.xml')">FNAF</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/upload/games/html5/Five%20Nights%20at%20Freddy's%202/')">FNAF 2</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/vacant/')">Vacant</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/upload/games/html5/nextDoor/')">Next Door</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbwP_Yq-kbxfVFhZG15dwseK_MA98gs2wnOgrA4VPJNPbxOTOaLTCiztn-B0xrutwV7F7w/exec')">Backrooms</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/barryhassecret.html')">Barry Has A Secret</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbybE9dVKBDWmmdLeSSV8_mVdmzhbDffv0j2N8OGaVLi_PHYDEc8lucXoNd9kF5BNygK/exec')">Bear Haven Nights</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/upload/games/swf/Papa's%20Cupcakeria/')">Papa's Cupcakeria</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/papas-burgeria/')">Papa's Burgeria</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/papas-pancakeria/')">Papa's Pancakeria</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/papas-freezeria/')">Papa's Freezeria</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/papas-hot-doggeria/')">Papa's Hot Doggeria</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/papas-pastaria-/')">Papa's Pastaria</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/papas-bakeria/')">Papa's Bakeria</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/papas-cheeseria/')">Papa's Cheeseria</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/papas-pizzeria/')">Papa's Pizzaria</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/papas-sushiria/')">Papa's Sushiria</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/papas-wingeria/')">Papa's Wingeria</button>
+            <button class="button" onclick="openLink('https://w8.snokido.com/games/flash/papaseries/tacomia.html?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=18037&mp_game_uid=papa-s-taco-mia&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fpapa-s-taco-mia&mp_int=1&mp_locale=en_US&mp_player_type=IFRAME&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=')">Papa's Tacomia</button>
+            <button class="button" onclick="openLink('https://www.play-games.com/embed/16743.html?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=219273&mp_game_uid=papa-louie-when-pizzas-attack&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fpapa-louie-when-pizzas-attack&mp_int=1&mp_locale=en_US&mp_player_type=IFRAME&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=')">Papa Louie 1</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://waflash.vseigru.net/?game=https://g.vseigru.net/igra-papa-lui-2-ataka-gamburgerov.swf&mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=200101&mp_game_uid=papa-louie-2-when-burgers-attack&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fpapa-louie-2-when-burgers-attack&mp_int=1&mp_locale=en_US&mp_player_type=IFRAME&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=')">Papa Louie 2</button>
+            <button class="button" onclick="openLink('https://www.getgames.io/games/waflash/?swf=papalouie3.swf&name=Papa%20Louie%202&mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=207834&mp_game_uid=papa-louie-3-when-sundaes-attack&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fpapa-louie-3-when-sundaes-attack&mp_int=1&mp_locale=en_US&mp_player_type=IFRAME&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=')">Papa Louie 3</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/upload/games/swf/super%20smash%20flash/')">Super Smash Flash</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=achievement-unlocked-2')">Achievement Unlocked 2</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=achievement-unlocked-3')">Achievement Unlocked 3</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Famateur-surgeon.xml')">Amateur Surgeon</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=cactus-mccoy')">Cactus McCoy</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=cactus-mccoy-2')">Cactus McCoy 2</button>
+            <button class="button" onclick="openLink('https://w8.snokido.com/games/html5/castle-wars-middle-ages/index.html')">Castle Wars 2 Middle Ages</button>
+            <button class="button" onclick="openLink('https://invited-foremost-barometer.glitch.me/')">Castle Wars 3 New Era</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://w8.snokido.com/games/flash/ruffle.html?g=catburglar-magic-museum')">Cat Burglar & The Magic Museum</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=chibi-knight')">Chibi Knight</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=civilizations-wars')">Civilization Wars</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/clear-vision.xml')">Clear Vision</button>
+            <button class="button" onclick="openLink('https://playgamesfreeaz.info/playgame2/?g=ClearVision2')">Clear Vision 2</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/clear-vision-3.xml')">Clear Vision 3</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/clear-vision-4.xml')">Clear Vision 4</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/clear-vision-5.xml')">Clear Vision 5</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/click-play.xml')">Click Play</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/clicker-heroes.xml')">Clicker Heroes</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/commando.xml')">Commando 1</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/commando-2.xml')">Commando 2</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/commando-2-hacked.xml')">Commando 2 Hacked</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/commando_3.xml')">Commando 3</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/cookie-clicker-2.xml')">Cookie Clicker Flash</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://www.gamenora.com/upload/games/swf/crazy%20flasher%203/')">Crazy Flasher 3</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fcursed-treasure.xml')">Cursed Treasure</button>
+            <button class="button" onclick="openLink('https://w8.snokido.com/games/flash/ruffle.html?g=dad-n-me')">Dad N' Me</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/dead-zed.xml')">Dead Zed</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/dead-zed-2.xml')">Dead Zed 2</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/diner-dash.xml')">Diner Dash</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/dirt-bike-4.xml')">Dirt Bike 4</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/dogfight_2.xml')">Dogfight 2</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/don-t-escape.xml')">Don't Escape</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/don-t-escape-2.xml')">Don't Escape 2</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/don-t-escape-3.xml')">Don't Escape 3</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=douchebag-beach-club')">D-Bag Beach Club</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=douchebag-s-chick')">D-Bag's Chick</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=drag-racer-v2')">Drag Racer V2</button>
+            <button class="button" onclick="openLink('https://frivez.com/flashgame?load=drag-racer-v3')">Drag Racer V3</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://playgamesfreeaz.info/DrawPlay2.html')">Draw Play 2</button>
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/0sv6b7mr8ry3mnczviovlrf0ql7e9ob9/')">Tiny Fishing</button>
+            <button class="button" onclick="openLink('https://kdata1.com/2020/05/slope/')">Slope</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbyJi8JpqAseFeEjdL3rKHd3piSCRm-3WZbK_7OohEJXF7jcshqLJI0AqkN_OBJB4O-UHA/exec')">Bear Chase</button>
+            <button class="button" onclick="openLink('https://bird-brass-lunch.glitch.me/')">Bouncy Rush</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://ext.minijuegosgratis.com/cats-love-cake/index.html?mp_api_as3_url=https%3A%2F%2Fssl.minijuegosgratis.com%2Flechuck%2Fas3%2Flatest.swf&mp_api_as3_url_bck=https%3A%2F%2Fapi.minijuegos.com%2Flechuck%2Fclient-as%2F&mp_api_id=5608&mp_api_js_url=https%3A%2F%2Fssl.minijuegosgratis.com%2Flechuck%2Fjs%2Flatest.js&mp_api_js_url_bck=https%3A%2F%2Fapi.minijuegos.com%2Flechuck%2Fclient-js%2F&mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=243893&mp_game_uid=cats-love-cake&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fcats-love-cake&mp_int=1&mp_locale=en_US&mp_player_type=IFRAME&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=&mini_signature=a3d24a5023c23282aa3badccc5513fc9')">Cats Love Cake</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if4dv@3c9e7a0cca4c44dd3035b99471291e672b45879a/6f94dk/coi.xml')">Climb Over It</button>
+            <button class="button" onclick="openLink('https://storage.googleapis.com/bento-developer-games/colorpixel/gameCode/index.html')">Color Pixel Art Class</button>
+            <button class="button" onclick="openLink('https://m.igroutka.ru/ni3/166/CoverOrangeOnline/?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=13875&mp_game_uid=cover-orange&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fcover-orange&mp_int=1&mp_locale=en_US&mp_player_type=IFRAME&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=')">Cover Orange</button>
+            <button class="button" onclick="openLink('https://www.miniplay.com/helpers/game/sandbox.php?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=202855&mp_game_uid=cover-orange-journey-knights&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fcover-orange-journey-knights&mp_int=1&mp_locale=en_US&mp_player_type=FLASH&mp_player_url=aHR0cHM6Ly93d3cubWluaWp1ZWdvc2dyYXRpcy5jb20vdjMvZ2FtZXMvZ2FtZXMvcHJvZC8yMDI4NTUvY292ZXJvcmFuZ2Vqb3VybmV5a25pZ2h0cy5zd2Y%3D&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=')">Cover Orange 2: Journey</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://7dk1v76gougsjdoeuuld41rn96n5bbno-a-sites-opensocial.googleusercontent.com/gadgets/ifr?container=enterprise&country=ALL&lang=en&libs=core&mid=195&parent=https://sites.google.com/site/unblockedgame76/crazy-super-bunnies&sanitize=0&url=https://482910562-310694728361940627.preview.editmysite.com/uploads/b/139890129-584166301800890640/files/scb.xml&v=8ff02723d72b5df6&view=default')">Crazy Super Bunnies</button>
+            <button class="button" onclick="openLink('https://unblocked-games.s3.amazonaws.com/games/2023/unity/cross-the-road/unblocked.html')">Cross That Road</button>
+            <button class="button" onclick="openLink('https://www.cbc.ca/kidscbc2/content/games/crossy-chicken/index.html')">Crossy Chicken</button>
+            <button class="button" onclick="openLink('https://nosy-ionian-technosaurus.glitch.me/')">Cubefield</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@28385476653e724a811795dff60a8ef6fa652bcf/h5j7dg3s/death_run.xml')">Deathrun 3D</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbx2bI3EuTRQ38VnKEoRU_8VEiYuInw7fPTFqw-qWyf8oeUfeUtJcIzNVFwyNg3q4QMqlw/exec')">Deathworm</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://583610583-274610857392748361.preview.editmysite.com/uploads/b/139890129-218750580260452864/files/diggy.xml')">Diggy 2</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbyR_8tPkQ8e0bo2WrV38CXPV2blNJ2M2DL0FJGuMWwu36L7LJMGO5hW0PJOjKB7JZhvoQ/exec')">Dino Meat Hunter</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycby8U_L-aY4ZVnh18kEt5GOfEmeDlrsbO36WleRQPQxxc4QyqL_jEbwSeS4ZophGdSGx/exec')">Dr.Acorn</button>
+            <button class="button" onclick="openLink('https://ext.minijuegos.com/fnf-week7/game.html?mp_api_as3_url=https%3A%2F%2Fssl.minijuegosgratis.com%2Flechuck%2Fas3%2Flatest.swf&mp_api_as3_url_bck=https%3A%2F%2Fapi.minijuegos.com%2Flechuck%2Fclient-as%2F&mp_api_id=3810&mp_api_js_url=https%3A%2F%2Fssl.minijuegosgratis.com%2Flechuck%2Fjs%2Flatest.js&mp_api_js_url_bck=https%3A%2F%2Fapi.minijuegos.com%2Flechuck%2Fclient-js%2F&mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=235653&mp_game_uid=friday-night-funkin&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Ffriday-night-funkin&mp_int=1&mp_locale=en_US&mp_player_type=IFRAME&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=&mini_signature=204d0c32a20d1c6b259d2b5216de271a')">Friday Night Funkin'</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbwZg_pyPIghLIUybdHXf5CkpZ-dR8qj2o2pA_Uo4rX83besGmavJcozWvkXv0BXcLQ4/exec')">Balls & Bricks</button>
+            <button class="button" onclick="openLink('https://maple-catkin-daphne.glitch.me/')">Paint House 3D</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://827403614-058364183759926437.preview.editmysite.com/uploads/b/139890129-762100382149765838/files/bob-the-robber.xml')">Bob The Robber</button>
+            <button class="button" onclick="openLink('https://spotty-zealous-pomelo.glitch.me/')">Bob The Robber 2</button>
+            <button class="button" onclick="openLink('https://splashy-cooperative-mare.glitch.me/')">Bob The Robber 3</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/the-worlds-hardest-game/')">Worlds Hardest Game</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/plants-vs-zombies.xml')">Plants VS Zombies</button>
+            <button class="button" onclick="openLink('https://snapdragon-freckle-detective.glitch.me/gfiles/html5/chess/')">Chess</button>
+            <button class="button" onclick="openLink('https://spicy-platinum-lens.glitch.me/')">3 Pandas</button>
+            <button class="button" onclick="openLink('https://deluxe-mellow-string.glitch.me/')">4096 3D</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://wise-phantom-fir.glitch.me/')">99 Balls Evo</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbzoem74D7V9JW4GAW1ORIPzshYYvvWVfMI4nHeBooIPi7-uru8fY5F1eWfwE3bKePJc/exec')">Agent Dash</button>
+            <button class="button" onclick="openLink('https://mercury-bottlenose-candy.glitch.me/')">Adam And Eve</button>
+            <button class="button" onclick="openLink('https://shelled-polar-address.glitch.me/')">Adam And Eve 2</button>
+            <button class="button" onclick="openLink('https://apple-heather-queen.glitch.me/')">Adam And Eve 3</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://righteous-cooked-galley.glitch.me/')">Adam And Eve 4</button>
+            <button class="button" onclick="openLink('https://boundless-nostalgic-deal.glitch.me/')">Adam And Eve 5</button>
+            <button class="button" onclick="openLink('https://salty-cheddar-price.glitch.me/')">Adam And Eve 5 PT2</button>
+            <button class="button" onclick="openLink('https://autumn-spiny-antelope.glitch.me/')">Adam and Eve 6</button>
+            <button class="button" onclick="openLink('https://tangy-loving-plastic.glitch.me/')">Adam And Eve 7</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://button-whip-antler.glitch.me/')">Adam And Eve 8</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbzcALINBxnG7suqOS4a-eiRcRaHeXCeLbgv5ARkaJKc9bHwXgGQA7xkFfKEqR6UK7UBEA/exec')">Agent Mission</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@17a9d59a77f507bccba5bd5b2d0dadb421aa6ae0/ns94hfd/Ahoy.xml')">AHOY! Survival</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Faskl.xml')">ASKL</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://538104932-173620588274136504.preview.editmysite.com/uploads/b/139890129-436559681805495872/files/bts.xml')">Big Tall Small</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbzZniD5BzPd67fsjwoHEKhT2L-encc_Jjqkd9xtxdpW9jZ1dH0yOMq3wiwOB04GDT9r/exec')">Bike Mayhem</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/bird-on-bird.xml')">Bird On Bird</button>
+            <button class="button" onclick="openLink('https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/bloonstowerdefense4/index.html')">Bloons Tower Defense 4</button>
+            <button class="button" onclick="openLink('https://odd-lily-catfish.glitch.me/')">Blue Pixel</button>
+            <button class="button" onclick="openLink('https://curly-cyan-bakery.glitch.me/')">Bounce Master</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://furry-stone-shaker.glitch.me/')">Cannon Shot</button>
+            <button class="button" onclick="openLink('https://w8.snokido.com/games/html5/chainsaw-dance/4/index.html')">Chainsaw Dance</button>
+            <button class="button" onclick="openLink('https://chessmania.h5games.usercontent.goog/v/5c6baeab-0cb7-4d06-b733-eafadb522e04/?gameCenterId=gamesnacks&origin=https://gamesnacks.com')">Chess Mania</button>
+            <button class="button" onclick="openLink('https://games.engineering.com/circloO/index.html')">CircloO</button>
+            <button class="button" onclick="openLink('https://games.engineering.com/circloO/index.html')">CircloO2</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbwCXVuZlRaMUvpTmLDQ7EaWhLtkFciaoxG_Fj_xp4vfuPtSI-3KEjVAl0YhknpSs66S3g/exec')">Color Shoot</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbyudVqenvbC9s_hhMwlggl7N0xOuCNoUbvJVR5Pr_7srjzfIZd42vRChkafdunf43y_/exec')">Color Switch Drop</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbyd9rqtbr7DCmN3cdihvPHkpR7MOgIh1ZeKyuJ744yyrcFmxcQ0kRPvvDQ6ou1UPCH3/exec')">Death Soul</button>
+            <button class="button" onclick="openLink('https://frosty-sammet-599c19.netlify.app/')">Dozen Bear</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if5dv@bc41e388ae3c7b444205c9e698348f5ddecf06cc/7dhg3jo/cocf.xml')">Cooking Frenzy</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/cooking-mama.xml')">Cooking Mama</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbw2Mo8IIrwI0yyV84rHJIm249PGImqvNxJvHMXZoRxwZfvLk6DSPdAOq3i52rojhgg/exec')">Cooking</button>
+            <button class="button" onclick="openLink('https://thorn-truth-node.glitch.me/')">Burger Shop</button>
+            <button class="button" onclick="openLink('https://littlebigsnake.com/')">Little Big Snake</button>
+            <button class="button" onclick="openLink('https://keen-cyclic-blarney.glitch.me/')">BitLife</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/stick-rpg-complete/')">Stick RPG</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/grow-rpg/')">Grow RPG</button>
+            <button class="button" onclick="openLink('https://honorable-ambitious-decision.glitch.me/')">Missle Game 3D</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fage-of-war-2.xml')">Age Of War 2</button>
+            <button class="button" onclick="openLink('https://cdn.henrystickman.net/lab/index.php?file=breaking-the-bank.swf')">Breaking The Bank</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/temple-run-2/')">Temple Run 2</button>
+            <button class="button" onclick="openLink('https://freeonlinegames.github.io/subway-surfers-tokyo/')">Subway Surfers</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/full/duck-life-1/')">Ducklife</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@4487c13b114e3b97c0d1e18dd381193bf62175f5/d5fuh3d/tomb_of_the_mask.xml')">Tomb Of The Mask</button>
+            <button class="button" onclick="openLink('https://diligent-lacy-parsnip.glitch.me/')">Bloxorz</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/k8pntef9is1lvl1mb4c1xsqg69cs9msu/')">Bus Rush</button>
+            <button class="button" onclick="openLink('https://capricious-gravel-geography.glitch.me/')">Craft-Mine</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbzMOhPBL2Cs0KmlVxK03lD9Uvl93S6vJvrCy7-U_bEnvYSlJ5XLVp7t7i8uzXyQTkZo/exec')">Dark Adventure</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://638508418-274639104736829364.preview.editmysite.com/uploads/b/139890129-212982790859809719/files/at1.xml')">Awesome Tanks</button>
+            <button class="button" onclick="openLink('https://html5-games.io/game/awesome-tanks-2/')">Awesome Tanks 2</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@b6d27a5eb8667fda8f610579eefcacb1f2f00b95/js72bx/vd8g3s.xml')">Angry Birds</button>
+            <button class="button" onclick="openLink('https://violentegg.fun/')">Shell Shockers</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbytIXKog2y662bDme3DOMFzgYifV0lDIX8JYCkF4Awffd58Nu8NmzF8JeSy5GLzZwi_ww/exec')">Armour Clash</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbyGa6nyD6BcrQRKAUm8w9RxO45crZ1DNTi2i1ff6rZPU3v0w-dI8T8XamezG9tuG1pz/exec')">Army Commander</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Farmy-of-ages.xml')">Army Of Ages</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('www.play-games.com/embed/11185.html')">Awesome Pirates</button>
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/877467744982531157/files/bb.html')">Banana Bread Demo</button>
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/yxmy7198xrlfuhhrhlm685hh0xinrrgo/')">Block City Wars</button>
+            <button class="button" onclick="openLink('https://halved-wealthy-angora.glitch.me/')">Blocky Paintball</button>
+            <button class="button" onclick="openLink('https://gamaverse.com/c/f/g/blue-vs-red-1661282113/?gd_sdk_referrer_url=https://gamaverse.com/blue-vs-red-game/')">Blue VS Red</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://marvelous-wirehaired-art.glitch.me/')">unblockmania Proxy Site</button>
+            <button class="button" onclick="openLink('https://astroid.wtf/')">Astroid Proxy 2</button>
+            <button class="button" onclick="openLink('https://astroid.ga.scay.net/')">Astroid Proxy</button>
+            <button class="button" onclick="openLink('https://calm-wool-tuesday.glitch.me/')">Bowman</button>
+            <button class="button" onclick="openLink('https://www.gamenora.com/upload/games/swf/Bowman-2/')">Bowman 2</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/5mkmynq4be442ueej5j4l6pommnieubj/')">Super Bowmasters</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbzbo5xiTLojj1vDfyF5evj0ZecvD5GOzZ68cIugEdU7kPGJduhsQVcB1FXl7iNAjN9m/exec')">Brawl Tanks</button>
+            <button class="button" onclick="openLink('https://html5.gamemonetize.co/lzyq41x2j1jkcuad1h07zo6uq8ymx7tj/?kiz10')">Mr.Bullet 3D</button>
+            <button class="button" onclick="openLink('https://fern-prism-palm.glitch.me/')">Bullet Party</button>
+            <button class="button" onclick="openLink('https://chambray-funky-buckaroo.glitch.me/')">Cat Gunner</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://band-wry-brake.glitch.me/')">Clash Of Armour</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://693510485-317028510063849274.preview.editmysite.com/uploads/b/139890129-415689491264989240/files/cofs.xml')">Clash Of Skulls</button>
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/combat_cubic_arena.html')">Combat Cubic Arena</button>
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/copter_vs_tank_ez.html')">Copter VS Tank EZ</button>
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/counter.html')">Counter Strike</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('http://app-167353.games.s3.yandex.net/167353/gdgviqyponbacepkmgb4v4zwp7zuaiim/index.html?sdk=https%3A%2F%2Fyandex.com%2Fgames%2Fsdk%2Fv2')">Counter Terrorist</button>
+            <button class="button" onclick="openLink('http://app-167353.games.s3.yandex.net/167353/gdgviqyponbacepkmgb4v4zwp7zuaiim/index.html?sdk=https%3A%2F%2Fyandex.com%2Fgames%2Fsdk%2Fv2')">CyberPunk: Resistance</button>
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/desert-shooter.html')">Desert Shooter</button>
+            <button class="button" onclick="openLink('https://snapdragon-freckle-detective.glitch.me/gfiles/flash/')">Flash Emulator</button>
+            <button class="button" onclick="openLink('https://snapdragon-freckle-detective.glitch.me/gfiles/rarch/?core=snes9x')">SNES Emulator</button>
+        </div>
+         <div class="button-row">
+            <button class="button" onclick="openLink('https://snapdragon-freckle-detective.glitch.me/gfiles/rarch/?core=nestopia')">NES Emulator</button>
+            <button class="button" onclick="openLink('https://snapdragon-freckle-detective.glitch.me/gfiles/rarch/?core=mupen64plus_next')">N64 Emulator</button>
+            <button class="button" onclick="openLink('https://snapdragon-freckle-detective.glitch.me/gfiles/rarch/?core=genesis_plus_gx')">Genesis Emulator</button>
+            <button class="button" onclick="openLink('https://snapdragon-freckle-detective.glitch.me/gfiles/rarch/?core=mgba')">GBA Emulator</button>
+            <button class="button" onclick="openLink('https://www.coolmathgames.com/sites/default/files/public_games/49436/')">Run 3</button>
+        </div>
+
+        <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@db7c558f6d366da74fcbbf98407d81120c76221e/0aynf57j/duck-life-2.xml')">Duck Life 2</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@07697277b06353fcdb759699d0c8b5f2f9303975/lft6d3g/ducklife-3.xml')">Duck Life 3</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fduck-life-4.xml')">Duck Life 4</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fduck-life-5.xml')">Duck Life Treasure Hunt</button>
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbzxBjmG4WQYZXkPxAW8G1QiwB7LLT_HmVQTuD2qfIyDZVc4x33RF8744flq1b-v1AUm/exec')">Duel Of Wizards</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="openLink('https://script.google.com/macros/s/AKfycbxEO0WNU5ySVx32SkLFgBacqMmGmS5xvlPnSJLsqvVcsBjg5yrdqK7_-arpVTtYWXj_/exec')">Dungeon Adventure</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://274539104-375910364482639571.preview.editmysite.com/uploads/b/139890129-908503369318119606/files/ds.xml')">Dunk Shot</button>
+            <button class="button" onclick="openLink('https://hilfig3r.github.io/EarnToDie/')">Earn To Die 2012 Part 2</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fearth-taken.xml')">Earth Taken 1</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fearth-taken-2.xml')">Earth Taken 2</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fearth-taken-3.xml')">Earth Taken 3</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Feffing-hail.xml')">Effing Hail</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Feffing-machines.xml')">Effing Machines</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Feffing-worms.xml')">Effing Worms</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Feffing-worms-2.xml')">Effing Worms 2</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Feffing-worms-xmas.xml')">Effing Worms Xmas</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Feffing-zombies.xml')">Effing Zombies</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fegg-knight.xml')">Egg Knight</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://493104753-963057148227461038.preview.editmysite.com/uploads/b/139890129-825858355833705451/files/ec.xml')">Egg Car</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://470137485-731408594630715268.preview.editmysite.com/uploads/b/139890129-886482068636258287/files/eg2.xml')">Egg Car 2</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if6dv@f0d64590af7cd0c25b83d010af08f8d927768fb9/gw3k6g/face.xml')">Elastic Man</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Felectric-box-2.xml')">Electric Box 2</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Felectric-man.xml')">Electric Man</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Felectric-man-2.xml')">Electric Man 2</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Felement-fighters.xml')">Element Fighters</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="openLink('https://zayaruzostreetorgan.com/uploads/5/0/5/6/5056555/custom_themes/664718197367015386/endless_tunnel.html')">Endless Tunnel</button>
+            <button class="button" onclick="openLink('https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1694171846%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F252000%2F252216_tactics_final.swf%3F1142864039%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2264fbb8e85922e%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A800%2C%22height%22%3A600%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F252000%2Fflash_252216.png%3Ff1364552983%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D')">Endless War</button>
+            <button class="button" onclick="openLink('https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1694171846%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F303000%2F303550_ew2.swf%3F1143843054%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2264fbb9e31918a%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A800%2C%22height%22%3A660%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F303000%2Fflash_303550.png%3Ff1364555888%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D')">Endless War 2</button>
+            <button class="button" onclick="openLink('https://www.miniplay.com/helpers/game/sandbox.php?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=21991&mp_game_uid=endless-war-3&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fendless-war-3&mp_int=1&mp_locale=en_US&mp_player_type=FLASH&mp_player_url=aHR0cHM6Ly93d3cubWluaWp1ZWdvc2dyYXRpcy5jb20vZmxhc2gxMjM0L25vX2hvdGxpbmsvZW5kbGVzc3dhcjMuc3dm&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=')">Endless War 3</button>
+            <button class="button" onclick="openLink('https://www.miniplay.com/helpers/game/sandbox.php?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=21993&mp_game_uid=endless-war-4&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fendless-war-4&mp_int=1&mp_locale=en_US&mp_player_type=FLASH&mp_player_url=aHR0cHM6Ly93d3cubWluaWp1ZWdvc2dyYXRpcy5jb20vZmxhc2gxMjM0L25vX2hvdGxpbmsvZW5kbGVzc3dhcjQuc3dm&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=')">Endless War 4</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fendless-war-5.xml')">Endless War 5</button>
+            <button class="button" onclick="openLink('https://f.kbhgames.com/RS/game.php?r=//f.kbhgames.com/2018/swf/ew6.swf&w=800&h=600&warnsupport=true')">Endless War 6</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fendless-war-7.xml')">Endless War 7</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fendless-zombie-rampage.xml')">Endless Zombie Rampage</button>
+            <button class="button" onclick="openLink('https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fendless-zombie-rampage-2.xml')">Endless Zombie Rampage</button>
+        </div>
+
+    </div>
+    <footer>
+        Made with ❤️ by the unblockmania team. <a href="https://unblockmania.github.io/Issue-Report/">Report an Issue</a>
+    </footer>
+    
+    <script>
+        // Function to open a link in an iframe
+        function openLink(url) {
+            var win = window.open();
+            var iframe = win.document.createElement('iframe');
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.border = "none";
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+
+        // Function to sort buttons alphabetically
+        function sortButtonsAlphabetically() {
+            var buttonContainer = document.getElementById("buttonContainer");
+            var buttons = Array.from(buttonContainer.getElementsByClassName("button"));
+
+            buttons.sort(function(a, b) {
+                var textA = a.textContent.toLowerCase();
+                var textB = b.textContent.toLowerCase();
+                return textA.localeCompare(textB);
+            });
+
+            buttonContainer.innerHTML = "";
+
+            var currentSection = "";
+            buttons.forEach(function(button) {
+                var buttonText = button.textContent.toLowerCase();
+                var firstChar = buttonText.charAt(0).toUpperCase();
+
+                if (currentSection !== firstChar && (firstChar >= 'A' && firstChar <= 'Z')) {
+                    currentSection = firstChar;
+                    var sectionHeader = document.createElement("div");
+                    sectionHeader.className = "section-header";
+                    sectionHeader.textContent = currentSection;
+                    buttonContainer.appendChild(sectionHeader);
+                }
+
+                buttonContainer.appendChild(button);
+            });
+        }
+
+        // Function to handle the scroll effect
+        function handleScroll() {
+            var container = document.querySelector(".container");
+            var img = document.querySelector("img");
+            var imgBottom = img.offsetTop + img.clientHeight;
+
+            if (window.pageYOffset > imgBottom) {
+                container.style.opacity = "0";
+            } else {
+                container.style.opacity = "1";
+            }
+        }
+
+        // Function to perform a search
+        function search() {
+            var searchInput = document.getElementById("searchInput").value.toLowerCase();
+            var buttons = document.querySelectorAll(".button");
+            var noResultMessage = document.getElementById("noResultMessage");
+            var hasResults = false;
+
+            buttons.forEach(function(button) {
+                var buttonText = button.textContent.toLowerCase();
+                if (buttonText.includes(searchInput)) {
+                    button.style.display = "inline-block";
+                    hasResults = true;
+                } else {
+                    button.style.display = "none";
+                }
+            });
+
+            if (!hasResults) {
+                noResultMessage.style.display = "block";
+            } else {
+                noResultMessage.style.display = "none";
+            }
+        }
+
+        // Add event listeners
+        window.addEventListener("scroll", handleScroll);
+        document.addEventListener("DOMContentLoaded", function() {
+            sortButtonsAlphabetically();
+        });
+    </script>
+
+</body>
+</html>
+
